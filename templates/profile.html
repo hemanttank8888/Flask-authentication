@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Profile</title>
+</head>
+<body>
+    <h2>Welcome, {{ current_user.username }}</h2>
+    <a href="{{ url_for('logout') }}">Logout</a>
+
+    <h3>User Profiles</h3>
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>Username</th>
+            <th>Gender</th>
+            <th>Age</th>
+        </tr>
+        {% for user in users %}
+        <tr>
+            <td>{{ user.id }}</td>
+            <td>{{ user.username }}</td>
+            <td>{{ user.gender }}</td>
+            <td>{{ user.age }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
