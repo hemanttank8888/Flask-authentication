@@ -14,7 +14,7 @@ This app is designed to provide a personalized user experience by integrating a 
 ## Installation
 To run the app locally, follow the steps below:
 ```bash
-git clone 
+git clone https://github.com/hemanttank8888/Flask-authentication.git
 cd /path/to/your/project
 python -m venv venv
 .\venv\Scripts\activate
